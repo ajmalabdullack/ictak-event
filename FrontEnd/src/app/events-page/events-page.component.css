@@ -1,0 +1,152 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+.event-top{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://streetline-film.com/wp-content/uploads/2018/10/events-background-1.jpg);
+    height: 500px;
+}
+.head-event{
+    color: white;
+    display: flex;
+    position: absolute;
+    top:40%;
+}
+.heading{
+    font-size: 7rem;
+}
+em{
+    color: #3682df !important;
+}
+.head-event h1 {
+    -webkit-animation: zoominoutsinglefeatured 80s infinite;
+    animation: zoominoutsinglefeatured 50s infinite;
+  
+}
+@keyframes zoominoutsinglefeatured {
+    0% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+  
+    100% {
+      transform: scale(1, 1);
+    }
+  }
+  .event{
+      display: flex;
+  }
+  .events{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    
+}
+  .card1{
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+  }
+  .card1:hover {
+    transform: scale(1.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+  }
+
+  .btn1{
+    background: none;
+    border: 1px solid #3682df;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding:5px;
+    min-width: 100px;
+    margin: 10px 10px;
+    position: relative;
+    transition: color 0.4s linear;
+    
+}
+.btn1:hover{
+    z-index: 1;
+    color: #fff;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #3682df;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+}
+.btn1::before{
+    transform: scaleX(0);
+}
+.btn1:hover::before{
+    transform: scaleX(1);
+}
+.conclave{
+  margin: 30px;
+}
+.card2{
+  color: #fff;
+  background-color:  #69a1e6;
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card2 p{
+  font-size: 1rem;
+}
+.card2-con{
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card3{
+  color: #fff;
+  background-color:  rgb(235, 94, 94);
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card3 p{
+  font-size: 1.1rem;
+}
+.prizes{
+  font-size: 20px;
+}
+.card4{
+  color: #fff;
+  background-color:  rgb(83, 197, 118);
+  padding: 20px;
+  box-shadow: 5px 5px 5px 5px rgba(0.1, 0.1, 0.1, 0.1);
+}
+.card4 p{
+  font-size: 1rem;
+}
+.event-details{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: white;
+}
+.dwnld{
+  padding: 20px;
+  margin: 50px;
+}
